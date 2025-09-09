@@ -20,7 +20,6 @@ export default function Home() {
     <section className="space-y-8">
       {/* Title and intro */}
       <header className="text-center">
-        <h1 className="text-4xl font-bold tracking-tight">React Teaching Lab</h1>
         <p className="mt-2 text-slate-600 dark:text-slate-300">
           Learn components, JSX, props, state, and events with beautiful examples.
         </p>
