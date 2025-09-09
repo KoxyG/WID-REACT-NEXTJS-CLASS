@@ -1,14 +1,14 @@
 // Import global Tailwind CSS styles for the entire app
 import "@/styles/globals.css";
-import Layout from "./layout";
+import Navbar from "./navbar";
 
 
-// Custom App component wraps every page with the Layout defined above
+// Custom App component wraps every page with the Navbar defined above
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
+    <Navbar>
       {/* Render the current page component with its props */}
       <Component {...pageProps} />
-    </Layout>
+    </Navbar>
   );
 }
