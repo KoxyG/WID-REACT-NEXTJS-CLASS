@@ -1,4 +1,3 @@
-// Link enables client-side transitions between routes
 import Link from "next/link";
 
 // Cards define the landing page navigation tiles
@@ -18,14 +17,13 @@ const cards = [
 export default function Home() {
   return (
     <section className="space-y-8">
-      {/* Title and intro */}
       <header className="text-center">
+        <h1 className="text-4xl font-bold tracking-tight">React Teaching Lab</h1>
         <p className="mt-2 text-slate-600 dark:text-slate-300">
           Learn components, JSX, props, state, and events with beautiful examples.
         </p>
       </header>
 
-      {/* Grid of navigation cards */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((c) => (
           <Link
@@ -42,7 +40,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Quick references */}
       <div className="text-sm text-slate-500">
         References: {" "}
         <a className="text-blue-600 hover:underline" href="https://react.dev/learn/your-first-component" target="_blank" rel="noreferrer">Your first component</a>

@@ -9,8 +9,9 @@ export default function Layout({ children }) {
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/70 dark:bg-gray-900/70 border-b border-slate-200 dark:border-gray-800">
         {/* Container for nav content with max width and padding */}
         <nav className="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between">
-          {/* Primary navigation links */}
           <div className="flex gap-3 text-sm">
+            {/* Link to Home page */}
+            <Link className="hover:text-blue-600" href="/">Home</Link>
             {/* Link to Components page */}
             <Link className="hover:text-blue-600" href="/components">Components</Link>
             {/* Link to JSX page */}
