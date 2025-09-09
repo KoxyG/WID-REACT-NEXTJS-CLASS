@@ -1,21 +1,28 @@
+// Page component that introduces JSX basics
 export default function JSXPage() {
+  // Example data object used inside JSX expressions
   const user = { name: "Ada Lovelace", role: "Pioneer" };
+  // Example array rendered as a list
   const tools = ["Components", "JSX", "Props", "State", "Events"];
   return (
     <section className="space-y-8">
+      {/* Page header */}
       <header>
         <h1 className="text-3xl font-bold tracking-tight">JSX</h1>
         <p className="text-slate-600 dark:text-slate-300 mt-2">Write HTML-like markup in JavaScript.</p>
       </header>
 
       <div className="grid md:grid-cols-2 gap-6">
+        {/* Live JSX examples */}
         <div className="rounded-xl border border-slate-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/40">
           <h2 className="font-semibold mb-3">Example</h2>
           <div className="space-y-3">
+            {/* JSX with embedded expressions */}
             <div className="rounded-lg border border-slate-200 dark:border-gray-800 p-4">
               <div className="text-lg font-medium">{user.name}</div>
               <div className="text-sm text-slate-600 dark:text-slate-300">Role: {user.role}</div>
             </div>
+            {/* Rendering a list with keys */}
             <ul className="rounded-lg border border-slate-200 dark:border-gray-800 p-4 list-disc pl-5">
               {tools.map((t) => (
                 <li key={t}>{t}</li>
@@ -24,6 +31,7 @@ export default function JSXPage() {
           </div>
         </div>
 
+        {/* Key points and references */}
         <div className="rounded-xl border border-slate-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/40">
           <h2 className="font-semibold mb-3">Key points</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">

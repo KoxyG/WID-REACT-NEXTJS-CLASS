@@ -1,5 +1,7 @@
+// Import state hook to build controlled inputs and handle events
 import { useState } from "react";
 
+// Newsletter signup form demonstrating controlled input and submit handling
 function Newsletter() {
   const [email, setEmail] = useState("");
   function handleSubmit(e) {
@@ -20,15 +22,18 @@ function Newsletter() {
   );
 }
 
+// Page component focusing on event handling patterns
 export default function EventsPage() {
   return (
     <section className="space-y-8">
+      {/* Page header */}
       <header>
         <h1 className="text-3xl font-bold tracking-tight">Events</h1>
         <p className="text-slate-600 dark:text-slate-300 mt-2">Handle user actions like clicks, input, and submit.</p>
       </header>
 
       <div className="grid md:grid-cols-2 gap-6">
+        {/* Example column with a newsletter form */}
         <div className="rounded-xl border border-slate-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/40">
           <h2 className="font-semibold mb-3">Example</h2>
           <div className="rounded-lg border border-slate-200 dark:border-gray-800 p-4">
@@ -36,6 +41,7 @@ export default function EventsPage() {
           </div>
         </div>
 
+        {/* Key points and references */}
         <div className="rounded-xl border border-slate-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/40">
           <h2 className="font-semibold mb-3">Key points</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">

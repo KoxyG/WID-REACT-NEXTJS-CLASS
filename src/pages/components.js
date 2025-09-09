@@ -1,21 +1,28 @@
+// Import the reusable Gallery component that composes Profile cards
 import Gallery from "@/components/Gallery";
 
+// Page component that teaches React Components
 export default function ComponentsPage() {
   return (
     <section className="space-y-8">
+      {/* Page header with title and description */}
       <header>
         <h1 className="text-3xl font-bold tracking-tight">Components</h1>
         <p className="text-slate-600 dark:text-slate-300 mt-2">Reusable UI building blocks that return JSX.</p>
       </header>
 
+      {/* Two-column responsive layout */}
       <div className="grid md:grid-cols-2 gap-6">
+        {/* Example column showing the Gallery component */}
         <div className="rounded-xl border border-slate-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/40">
           <h2 className="font-semibold mb-3">Example</h2>
           <div className="rounded-lg border border-slate-200 dark:border-gray-800 p-4">
+            {/* Render the Gallery of Profiles */}
             <Gallery />
           </div>
         </div>
 
+        {/* Key points and references column */}
         <div className="rounded-xl border border-slate-200 dark:border-gray-800 p-5 bg-white/60 dark:bg-gray-900/40">
           <h2 className="font-semibold mb-3">Key points</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
@@ -24,6 +31,7 @@ export default function ComponentsPage() {
             <li>Compose components together.</li>
           </ul>
           <div className="mt-4 text-sm">
+            {/* Reference links to official docs */}
             <a className="text-blue-600 hover:underline" href="https://react.dev/learn/your-first-component" target="_blank" rel="noreferrer">React: Your first component</a>
             <span className="mx-2">·</span>
             <a className="text-blue-600 hover:underline" href="https://www.geeksforgeeks.org/reactjs/reactjs-components/" target="_blank" rel="noreferrer">GfG: Components</a>

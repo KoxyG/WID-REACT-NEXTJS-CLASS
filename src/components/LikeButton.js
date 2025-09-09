@@ -1,5 +1,7 @@
+// Local state for counting likes
 import { useState } from "react";
 
+// Button that increments an internal like counter
 export default function LikeButton({ initial = 0, label = "Like" }) {
   const [likes, setLikes] = useState(initial);
   return (

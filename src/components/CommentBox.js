@@ -1,5 +1,7 @@
+// useState manages the text input and list of comments
 import { useState } from "react";
 
+// CommentBox contains a controlled input and a comments list
 export default function CommentBox() {
   const [text, setText] = useState("");
   const [comments, setComments] = useState([]);
@@ -11,6 +13,7 @@ export default function CommentBox() {
   }
   return (
     <div className="space-y-3">
+      {/* Controlled input form */}
       <form onSubmit={addComment} className="flex gap-2">
         <input
           value={text}
@@ -22,6 +25,7 @@ export default function CommentBox() {
           Comment
         </button>
       </form>
+      {/* Comments list */}
       <ul className="space-y-2">
         {comments.map((c) => (
           <li key={c.id} className="rounded-lg border border-slate-200 dark:border-gray-800 p-3">{c.text}</li>
