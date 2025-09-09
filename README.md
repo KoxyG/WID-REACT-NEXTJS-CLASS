@@ -1,41 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+## React Teaching Lab — Next.js + Tailwind
 
-## Getting Started
+A beautiful, beginner-friendly lab for teaching core React concepts: components, JSX, props, state, and event handling. Built with Next.js (Pages Router) and Tailwind CSS, featuring interactive examples and an integrated demo.
 
-First, run the development server:
+### Tech stack
+- Next.js 15 (Pages Router)
+- React 19
+- Tailwind CSS v4 with `@tailwindcss/postcss`
 
+### Getting started
+1) Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2) Start the dev server
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3) Open `http://localhost:3000`
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Project structure
+```text
+src/
+  pages/
+    _app.js          # shared layout & navigation
+    _document.js     # html/head/body customization
+    index.js         # landing with topic cards
+    components.js    # Components topic page
+    jsx.js           # JSX topic page
+    props.js         # Props topic page
+    state.js         # State topic page
+    events.js        # Events topic page
+    demo.js          # Integrated demo page
+    api/hello.js     # example API route
+  components/
+    Avatar.js        # shared avatar (size prop supported)
+    Profile.js       # small profile row
+    Gallery.js       # list of profiles
+    LikeButton.js    # internal counter button
+    CommentBox.js    # controlled input + list
+styles/
+  globals.css        # Tailwind layer + theme tokens
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### Routes
+- `/` — Landing page with cards linking to topics
+- `/components` — Components: composition and reuse
+- `/jsx` — JSX: expressions, attributes, lists
+- `/props` — Props: inputs and defaults
+- `/state` — State: `useState` and updates
+- `/events` — Events: controlled inputs and submit
+- `/demo` — Integrated article with avatar, likes, comments
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Tailwind CSS
+- Tailwind is enabled via `@tailwindcss/postcss` in `postcss.config.mjs` and imported in `src/styles/globals.css`.
+- Dark mode-friendly styles and subtle gradients used across pages.
 
-## Learn More
+### Scripts
+```json
+{
+  "dev": "next dev --turbopack",
+  "build": "next build --turbopack",
+  "start": "next start"
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Learning references
+- React — Your first component: `https://react.dev/learn/your-first-component`
+- React — Writing markup with JSX: `https://react.dev/learn/writing-markup-with-jsx`
+- React — Responding to events: `https://react.dev/learn/responding-to-events`
+- React — Choosing the state structure: `https://react.dev/learn/choosing-the-state-structure`
+- GeeksforGeeks — Components: `https://www.geeksforgeeks.org/reactjs/reactjs-components/`
+- GeeksforGeeks — State: `https://www.geeksforgeeks.org/reactjs/reactjs-state/`
+- GeeksforGeeks — Events: `https://www.geeksforgeeks.org/reactjs/react-js-events/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-# WID-REACT-NEXTJS-CLASS
+### Notes
+- File extensions: `.js` for React files (or `.jsx` if your team prefers). For TypeScript, use `.tsx` when JSX is present.
