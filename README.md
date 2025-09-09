@@ -24,8 +24,9 @@ npm run dev
 ```text
 src/
   pages/
-    _app.js          # shared layout & navigation
+    _app.js          # wraps all pages with Navbar component
     _document.js     # html/head/body customization
+    navbar.js        # navigation bar with links to all pages
     index.js         # landing with topic cards
     components.js    # Components topic page
     jsx.js           # JSX topic page
@@ -40,9 +41,20 @@ src/
     Gallery.js       # list of profiles
     LikeButton.js    # internal counter button
     CommentBox.js    # controlled input + list
+    Newsletter.js    # newsletter signup component
 styles/
   globals.css        # Tailwind layer + theme tokens
 ```
+
+### Navigation
+The app uses a consistent navbar (`navbar.js`) that wraps all pages via `_app.js`. The navbar includes:
+- **Home** — Landing page with topic cards
+- **Components** — Components: composition and reuse
+- **JSX** — JSX: expressions, attributes, lists
+- **Props** — Props: inputs and defaults
+- **State** — State: `useState` and updates
+- **Events** — Events: controlled inputs and submit
+- **Demo** — Integrated article with avatar, likes, comments
 
 ### Routes
 - `/` — Landing page with cards linking to topics

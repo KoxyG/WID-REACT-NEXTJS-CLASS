@@ -4,6 +4,7 @@ export default function JSXPage() {
   const user = { name: "Ada Lovelace", role: "Pioneer" };
   // Example array rendered as a list
   const tools = ["Components", "JSX", "Props", "State", "Events"];
+
   return (
     <section className="space-y-8">
       {/* Page header */}

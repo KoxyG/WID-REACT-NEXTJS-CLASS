@@ -1,5 +1,5 @@
 // Displays a small user profile with avatar and name
-export default function Profile({ name, avatar }) {
+function Profile({ name, avatar }) {
   return (
     <div className="flex items-center gap-3">
       {/* Circular avatar image */}
@@ -9,5 +9,6 @@ export default function Profile({ name, avatar }) {
     </div>
   );
 }
+export default Profile;
 
 

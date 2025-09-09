@@ -38,7 +38,7 @@ export default function PropsPage() {
       </div>
 
       <div className="text-sm">
-        <a className="text-blue-600 hover:underline" href="https://react.dev/learn/your-first-component" target="_blank" rel="noreferrer">React: Your first component</a>
+        <a className="text-blue-600 hover:underline" href="https://react.dev/learn/passing-props-to-a-component" target="_blank" rel="noreferrer">React: Your first component</a>
       </div>
     </section>
   );

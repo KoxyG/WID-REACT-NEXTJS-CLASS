@@ -3,8 +3,11 @@ import Profile from "@/components/Profile";
 
 // A small gallery composed of Profile components
 export default function Gallery() {
+
   return (
+    
     <div className="space-y-3">
+
       {/* Section title */}
       <h3 className="font-medium">Amazing scientists</h3>
       {/* Profiles list */}
@@ -14,6 +17,7 @@ export default function Gallery() {
         <Profile name="Ada Lovelace" avatar="https://i.imgur.com/6dkR2W7.jpeg" />
       </div>
     </div>
+
   );
 }
 

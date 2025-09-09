@@ -2,8 +2,13 @@
 import { useState } from "react";
 
 // Reusable counter demonstrating useState and updater functions
-function Counter({ initial = 0 }) {
-  const [count, setCount] = useState(initial);
+function Counter({initial = 0}) {
+
+  const [count, setCount] = useState(initial); // uses for props
+  // const [count, setCount] = useState(0); // used when there is no props but setting a number
+  // const [count, setCount] = useState(""); // used when there is no props but setting a string
+
+
   return (
     <div className="flex items-center gap-2">
       {/* Decrement using functional updater */}
